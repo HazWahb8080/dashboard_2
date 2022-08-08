@@ -6,11 +6,11 @@ import { activeNavItemState } from "../../atoms/ActiveNavBarAtom";
 function NavBar() {
   return (
     <nav className="border-r border-gray-200 min-h-[90vh] w-[80px] lg:w-[250px] pt-8 px-1 flex flex-col items-start justify-between">
-      <div className="space-y-8">
+      <div className="space-y-8 w-full ">
         {navLinks.slice(0, 4).map((link) => (
           <NavItem link={link} />
         ))}
-        <div className="w-full border-t-2 border-gray-100" />
+        <div className="w-full border-t border-gray-200" />
         {navLinks.slice(4, 6).map((link) => (
           <NavItem link={link} />
         ))}
