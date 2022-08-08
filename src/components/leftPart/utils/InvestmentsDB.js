@@ -12,7 +12,7 @@ export const InvestDB = [
   },
   {
     id:1,
-    title: "House & Apartment",
+    title: "House",
     desc: "Manulife Inc.",
     price: "890.00",
     upOrDown: "down",
@@ -22,7 +22,7 @@ export const InvestDB = [
   {
     id:2,
     title: "Education",
-    desc: "Interaction design foundation",
+    desc: "Interaction design",
     price: " 58.99 ",
     upOrDown: "up",
     percent: "10.2%",
@@ -30,8 +30,8 @@ export const InvestDB = [
   },
   {
     id:3,
-    title: "Food & Drink",
-    desc: "Interaction design foundation",
+    title: "Food",
+    desc: "Interaction design",
     price: "13.25",
     upOrDown: "down",
     percent: "0.25%",

@@ -5,7 +5,7 @@ import { activeNavItemState } from "../../atoms/ActiveNavBarAtom";
 
 function NavBar() {
   return (
-    <nav className="border-r border-gray-200 min-h-[90vh] w-[80px] lg:w-[250px] pt-8 px-1 flex flex-col items-start justify-between">
+    <nav className=" col-span-2 border-r border-gray-200 min-h-[90vh] w-[80px] xl:w-[250px] pt-8 px-1 flex flex-col items-start justify-between">
       <div className="space-y-8 w-full ">
         {navLinks.slice(0, 4).map((link) => (
           <NavItem link={link} />
@@ -15,7 +15,7 @@ function NavBar() {
           <NavItem link={link} />
         ))}
       </div>
-      <div className="lg:flex flex-col hidden  items-center justify-center space-y-4 px-4 py-4 ">
+      <div className="xl:flex flex-col hidden  items-center justify-center space-y-4 px-4 py-4 ">
         <h1 className="text-xl w-full font-medium">
           Grow Your <br /> Saving Now!
         </h1>
@@ -40,7 +40,7 @@ function NavItem({ link }) {
     >
       <span> {link.icon}</span>
       <h1
-        className={`text-gray-600 group-hover:text-black lg:flex hidden ${
+        className={`text-gray-600 group-hover:text-black xl:flex hidden ${
           activeNav === link.id && "text-black "
         }} `}
       >

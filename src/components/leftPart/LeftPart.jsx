@@ -4,7 +4,7 @@ import { InvestDB } from "./utils/InvestmentsDB";
 
 function LeftPart() {
   return (
-    <div className=" col-span-2 min-h-[90vh] border-r border-gray-200  ">
+    <div className=" col-span-2 min-h-[90vh] border-r border-gray-200 items-start justify-start flex flex-col w-full ">
       {/* top section*/}
       <div className="w-full items-start justify-start flex flex-col px-12 pt-12 pb-6">
         <h1 className="font-bold text-xl xl:text-2xl pb-2 "> My Card </h1>
