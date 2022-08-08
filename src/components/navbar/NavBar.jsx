@@ -5,14 +5,25 @@ import { activeNavItemState } from "../../atoms/ActiveNavBarAtom";
 
 function NavBar() {
   return (
-    <div className="border-r border-gray-200 min-h-[90vh] w-[80px] lg:w-[250px] pt-8 px-1 space-y-8">
-      {navLinks.slice(0, 4).map((link) => (
-        <NavItem link={link} />
-      ))}
-      <div className="w-full border-t-2 border-gray-100" />
-      {navLinks.slice(4, 6).map((link) => (
-        <NavItem link={link} />
-      ))}
+    <div className="border-r border-gray-200 min-h-[90vh] w-[80px] lg:w-[250px] pt-8 px-1 flex flex-col items-start justify-between">
+      <div className="space-y-8">
+        {navLinks.slice(0, 4).map((link) => (
+          <NavItem link={link} />
+        ))}
+        <div className="w-full border-t-2 border-gray-100" />
+        {navLinks.slice(4, 6).map((link) => (
+          <NavItem link={link} />
+        ))}
+      </div>
+      <div className="lg:flex flex-col hidden  items-center justify-center space-y-4 px-4 py-4 ">
+        <h1 className="text-xl w-full font-medium">
+          Grow Your <br /> Saving Now!
+        </h1>
+        <p> Pick an investment strategy that reflexts your goals </p>
+        <button className=" w-full py-2 px-3 bg-black text-white">
+          Become a Pro
+        </button>
+      </div>
     </div>
   );
 }
