@@ -1,4 +1,6 @@
 import React from "react";
+import InvestItem from "./InvestItem";
+import { InvestDB } from "./utils/InvestmentsDB";
 
 function LeftPart() {
   return (
@@ -27,6 +29,16 @@ function LeftPart() {
         </div>
       </div>
       {/* bottom section*/}
+      <div className="w-full items-start justify-start flex flex-col px-12 py-6">
+        <h1 className="font-bold text-xl xl:text-2xl pb-2 ">
+          Recent Investment
+        </h1>
+        <div className="w-full space-y-5 overflow-y-auto max-h-[350px] py-6 scrollbar-hide">
+          {InvestDB.map((item) => (
+            <InvestItem item={item} key={item.id} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
