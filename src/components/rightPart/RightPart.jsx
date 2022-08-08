@@ -51,7 +51,7 @@ function RightPart() {
         <h1 className="text-xl font-bold xl:text-3xl py-4 "> My Portfolio </h1>
         <div className="flex items-center justify-center space-x-6 overflow-x-auto w-full py-4 ">
           {InvestDB.map((item) => (
-            <PortfolioItem item={item} />
+            <PortfolioItem item={item} key={item.id} />
           ))}
         </div>
       </div>
