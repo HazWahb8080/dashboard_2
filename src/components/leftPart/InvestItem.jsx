@@ -1,7 +1,7 @@
 import React from "react";
 
 function InvestItem({ item }) {
-  const {title, desc, icon, upOrDown, percent, price } = item; //destructioring
+  const { title, desc, icon, upOrDown, percent, price } = item; //destructioring
   return (
     <div className="w-full py-2 px-2 items-cener justify-between flex">
       {/* icon + text */}
