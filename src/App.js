@@ -10,7 +10,7 @@ function App() {
      <Header/>
      <div className='w-full min-h-[90vh] flex items-start justify-start '>
      <NavBar/>
-     <div className='flex-1 grid grid-cols-1 xl:grid-cols-5 gap-4'>
+     <div className='flex-1 grid grid-cols-1 xl:grid-cols-5'>
       <LeftPart/>
       <RightPart/>
      </div>
