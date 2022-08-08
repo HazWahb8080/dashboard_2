@@ -2,7 +2,6 @@ import { CashIcon, CreditCardIcon } from "@heroicons/react/outline";
 import React from "react";
 import Chart from "./chart/Chart";
 import { InvestDB } from "./../leftPart/utils/InvestmentsDB";
-import InvestItem from "../leftPart/InvestItem";
 import PortfolioItem from "./PortfolioItem";
 
 function RightPart() {
